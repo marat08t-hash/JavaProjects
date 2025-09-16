@@ -1,0 +1,14 @@
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+public class Main {
+    public static void main(String[] args){
+      Scanner scan = new Scanner(System.in);
+      double a = scan.nextDouble();
+      if(a < 9 && a > 2)
+          System.out.println("Число больше 5 и меньше 10(скам)");
+      else
+          System.out.println("Неизвестное число");
+      }
+}
