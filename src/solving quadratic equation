@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
+public class Code {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int x = scan.nextInt();
+        int y = scan.nextInt();
+        int z = scan.nextInt();
+        int r = y*y - 4*x*z;
+        if(r < 0)
+            System.out.println("Корней нет");
+        else {
+            double d = firstroot(x, y, z, r);
+            System.out.println(d);
+            double e = secondroot(x, y, z, r);
+            System.out.println(e);
+        }
+    }
+      static double firstroot(int a, int b, int c, int r){
+            return (-b + Math.sqrt(r)) /(2*a);
+    }
+    static double secondroot(int a, int b, int c, int r){
+            return (-b - Math.sqrt(r)) /(2*a);
+    }
+
+}
