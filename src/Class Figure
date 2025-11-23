@@ -1,0 +1,30 @@
+class Figure{
+    public static class Triangle{
+        public static void getarea(int x1, int x2 , int x3, int y1, int y2, int y3){
+            double S = Math.abs((y1*x2 - y2*x1 + y2*x3 - x2*y3 + y3*x1 - x3*y1)/2);
+            System.out.println(S);
+        }
+        public static void getp(int x1, int x2 , int x3, int y1, int y2, int y3){
+            Double P = Math.sqrt((x2-x1)*(x2-x1) + (y2 - y1)*(y2 - y1)) + Math.sqrt((x3-x2)*(x3-x2) + (y3 - y2)*(y3 - y2)) + Math.sqrt((x3-x1)*(x3-x1) + (y3 - y1)*(y3 - y1));
+            System.out.println(P);
+        }
+    }
+    public static class Circle{
+        public static void getarea(double R){
+            final double PI = Math.PI;
+            double S = PI*R*R;
+            System.out.println(S);
+        }
+        public static void getp(double R){
+            System.out.println(2*Math.PI*R);
+        }
+    }
+    public static class Rectangle{
+        public static void getarea(double a, double b){
+            System.out.println(a*b);
+        }
+        public static void getp(double a , double b){
+            System.out.println(2*a + 2*b);
+        }
+    }
+}
